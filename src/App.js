@@ -1,12 +1,28 @@
 import './App.css';
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import {
+  Button,
+  FormControl,
+  Select,
+  MenuItem,
+  InputLabel,
+} from "@mui/material";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h3>Welcome to the WiFi Heatmap Display Project!</h3>
-        <p>Please follow the README to get started.</p>
-      </header>
+      <div className="leaflet-container">
+        <MapContainer center={[37.8719, -122.2585]} zoom={17} scrollWheelZoom={true}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+        </MapContainer>
+      </div>
     </div>
   );
 }
