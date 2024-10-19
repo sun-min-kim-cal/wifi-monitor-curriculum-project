@@ -42,7 +42,6 @@ function App() {
           />
         </MapContainer>
         <Box
-<<<<<<< HEAD
           sx={{
             display: 'flex',
             flexDirection: 'row',
@@ -77,29 +76,6 @@ function App() {
             </Select>
           </FormControl>
           </Box>
-=======
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          p: 1,
-          m: 1,
-          bgcolor: 'background.paper',
-          borderRadius: 1,
-        }}
-      >
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Select Current Location</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            label="Age"
-          >
-            <MenuItem value={10}>MLK</MenuItem>
-            <MenuItem value={20}>not MLK</MenuItem>
-            <MenuItem value={30}>not MLK</MenuItem>
-          </Select>
-        </FormControl>
->>>>>>> afb73d9008000839da3839ef831b8e5dfeebc2d7
 
           <Box
             sx={{
@@ -180,11 +156,6 @@ function App() {
       </div>
     </div>
   );
-
- 
-    
-  
-
 
 
 
