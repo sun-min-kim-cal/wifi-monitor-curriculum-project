@@ -11,8 +11,20 @@ import {
   InputLabel,
 } from "@mui/material";
 
+import * as React from 'react';
+import Box from '@mui/material/Box';
+//import InputLabel from '@mui/material/InputLabel';
+
+
+
 
 function App() {
+
+  
+  // const handleChange = (event: React.ChangeEvent) => {
+  //   setAge(event.target.value as string);
+  // };
+
   return (
     <div className="App">
       <div style={{
@@ -30,8 +42,44 @@ function App() {
           />
         </MapContainer>
     </div>
+
+
+    <Box sx={{ minWidth: 120 }}>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          label="Age"
+        >
+          <MenuItem value={10}>MLK</MenuItem>
+          <MenuItem value={20}>not MLK</MenuItem>
+          <MenuItem value={30}>not MLK</MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
+
+    <Button variant="outlined">RESET LOCATION</Button>
+
+    <Button variant="outlined">Submit Feedback</Button>
+
+    <Button variant="outlined">Clear Response</Button>
+
+
+
+
   </div>
   );
+
+ 
+    
+  
+
+
+
+
+
+
 }
 
 export default App;
