@@ -41,8 +41,6 @@ function App() {
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
         </MapContainer>
-
-
         <Box
         sx={{
           display: 'flex',
@@ -66,38 +64,37 @@ function App() {
           </Select>
         </FormControl>
 
-        <Button variant="outlined">RESET LOCATION</Button>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Age</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              label="Age"
+            >
+              <MenuItem value={10}>MLK</MenuItem>
+              <MenuItem value={20}>not MLK</MenuItem>
+              <MenuItem value={30}>not MLK</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            p: 1,
+            m: 1,
+            bgcolor: 'background.paper',
+            borderRadius: 1,
+          }}
+        > 
+          <Button variant="outlined">RESET LOCATION</Button>
 
-        <Button variant="outlined">Submit Feedback</Button>
+          <Button variant="outlined">Submit Feedback</Button>
 
-        <Button variant="outlined">Clear Response</Button>
-
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Select Your Response</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            label="Age"
-          >
-            <MenuItem value={10}>Stable</MenuItem>
-            <MenuItem value={20}>OK</MenuItem>
-            <MenuItem value={30}>Shaky ASF</MenuItem>
-          </Select>
-        </FormControl>
-
-      </Box>
-
+          <Button variant="outlined">Clear Response</Button>
+        </Box>
+      </div>
     </div>
-
-    
-
-
-    
-
-    
-
-
-  </div>
   );
 
  
