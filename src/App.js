@@ -54,7 +54,7 @@ function App() {
         }}
       >
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <InputLabel id="demo-simple-select-label">Select Current Location</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
@@ -71,6 +71,19 @@ function App() {
         <Button variant="outlined">Submit Feedback</Button>
 
         <Button variant="outlined">Clear Response</Button>
+
+        <FormControl fullWidth>
+          <InputLabel id="demo-simple-select-label">Select Your Response</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            label="Age"
+          >
+            <MenuItem value={10}>Stable</MenuItem>
+            <MenuItem value={20}>OK</MenuItem>
+            <MenuItem value={30}>Shaky ASF</MenuItem>
+          </Select>
+        </FormControl>
 
       </Box>
 
