@@ -41,50 +41,60 @@ function App() {
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
         </MapContainer>
-
-
         <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          p: 1,
-          m: 1,
-          bgcolor: 'background.paper',
-          borderRadius: 1,
-        }}
-      >
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            label="Age"
-          >
-            <MenuItem value={10}>MLK</MenuItem>
-            <MenuItem value={20}>not MLK</MenuItem>
-            <MenuItem value={30}>not MLK</MenuItem>
-          </Select>
-        </FormControl>
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            p: 1,
+            m: 1,
+            bgcolor: 'background.paper',
+            borderRadius: 1,
+          }}
+        >
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Age</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              label="Age"
+            >
+              <MenuItem value={10}>MLK</MenuItem>
+              <MenuItem value={20}>not MLK</MenuItem>
+              <MenuItem value={30}>not MLK</MenuItem>
+            </Select>
+          </FormControl>
 
-        <Button variant="outlined">RESET LOCATION</Button>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Age</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              label="Age"
+            >
+              <MenuItem value={10}>MLK</MenuItem>
+              <MenuItem value={20}>not MLK</MenuItem>
+              <MenuItem value={30}>not MLK</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            p: 1,
+            m: 1,
+            bgcolor: 'background.paper',
+            borderRadius: 1,
+          }}
+        > 
+          <Button variant="outlined">RESET LOCATION</Button>
 
-        <Button variant="outlined">Submit Feedback</Button>
+          <Button variant="outlined">Submit Feedback</Button>
 
-        <Button variant="outlined">Clear Response</Button>
-
-      </Box>
-
+          <Button variant="outlined">Clear Response</Button>
+        </Box>
+      </div>
     </div>
-
-    
-
-
-    
-
-    
-
-
-  </div>
   );
 
  
